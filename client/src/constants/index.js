@@ -1,0 +1,210 @@
+export const NAV_LINKS = [
+  { name: 'Explore', path: '/properties' },
+  { name: 'How It Works', path: '/how-it-works' },
+  { name: 'About', path: '/about' },
+  { name: 'For Owners', path: '/owners' },
+];
+
+export const TRUST_HIGHLIGHTS = [
+  {
+    id: 'verified-properties',
+    title: 'Verified Properties',
+    description: 'Physical audit and video-verified photos. What you see is what you experience.',
+    icon: 'ShieldCheck',
+    badge: '100% Inspected',
+    color: 'emerald',
+  },
+  {
+    id: 'verified-residents',
+    title: 'Verified Residents Only',
+    description: 'Reviews and ratings can strictly be written by residents after a verified stay.',
+    icon: 'UserCheck',
+    badge: 'Zero Fake Reviews',
+    color: 'blue',
+  },
+  {
+    id: 'transparent-pricing',
+    title: 'Transparent Pricing',
+    description: 'Full breakdown of rent, electricity unit costs, food charges, and deposit return terms.',
+    icon: 'Receipt',
+    badge: 'No Hidden Fees',
+    color: 'amber',
+  },
+  {
+    id: 'real-experiences',
+    title: 'Owner Promise vs Reality',
+    description: 'Track owner behavior, complaint resolution turnaround, and food quality metrics.',
+    icon: 'Sparkles',
+    badge: 'StayEasy Trust Score',
+    color: 'indigo',
+  },
+];
+
+export const HOW_IT_WORKS_STEPS = [
+  {
+    step: '01',
+    title: 'Search & Filter',
+    description: 'Find PGs, Hostels, or Shared Flats matching your exact budget, roommate preferences, and college/office location.',
+    icon: 'Search',
+  },
+  {
+    step: '02',
+    title: 'Compare Reality vs Claims',
+    description: 'Examine detailed StayEasy Trust Scores, actual electricity bill estimates, and verified food reviews.',
+    icon: 'Scale',
+  },
+  {
+    step: '03',
+    title: 'Verify Details',
+    description: 'Review audited room 360° views, security deposit refund terms, and house rules with zero broker involvement.',
+    icon: 'FileCheck2',
+  },
+  {
+    step: '04',
+    title: 'Reserve Your Room / Bed',
+    description: 'Lock in your 1/2/3/4-seater bed or private room with transparent deposit terms and instant confirmation.',
+    icon: 'KeyRound',
+  },
+  {
+    step: '05',
+    title: 'Check-in & Active Stay',
+    description: 'Manage your monthly rent receipts, track owner complaint resolutions, and experience seamless living.',
+    icon: 'Home',
+  },
+  {
+    step: '06',
+    title: 'Review as a Resident',
+    description: 'Help the student and professional community by reviewing food quality, owner behavior, and deposit return speed.',
+    icon: 'MessageSquareQuote',
+  },
+];
+
+export const DEMO_PROPERTIES = [
+  {
+    id: 'demo-prop-1',
+    isDemo: true,
+    title: 'Greenwood Luxury Student Living',
+    tagline: 'Premium Co-Living & PG for Students & Young Grads',
+    type: 'PG / Co-Living',
+    gender: 'Unisex (Separate Floors)',
+    location: 'Koramangala 4th Block, Bengaluru',
+    distance: '800m from Christ University',
+    baseRent: 11500,
+    deposit: 20000,
+    roomTypes: ['Single', '2-Seater', '3-Seater'],
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80',
+    trustScore: 94,
+    foodRating: 4.6,
+    ownerRating: 4.8,
+    depositReliability: 'Fast Refund (Avg 3 days)',
+    electricity: 'Sub-metered (₹8 / unit)',
+    amenities: ['High-Speed WiFi', '3 Times Meal', 'Daily Cleaning', 'Biometric Entry', 'Gym Access'],
+    badge: 'Demo Listing',
+  },
+  {
+    id: 'demo-prop-2',
+    isDemo: true,
+    title: 'MetroNest Executive Hostel',
+    tagline: 'Peaceful Work-Ready Living for IT Professionals',
+    type: 'Hostel',
+    gender: 'Male Only',
+    location: 'Hitec City, Hyderabad',
+    distance: '5 mins to Cyber Towers',
+    baseRent: 9500,
+    deposit: 15000,
+    roomTypes: ['Single', '2-Seater'],
+    image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80',
+    trustScore: 91,
+    foodRating: 4.4,
+    ownerRating: 4.7,
+    depositReliability: '100% Refund Record',
+    electricity: 'Included in Rent',
+    amenities: ['Power Backup', 'North & South Food', 'Attached Washroom', 'CCTV 24/7', 'Laundry'],
+    badge: 'Demo Listing',
+  },
+  {
+    id: 'demo-prop-3',
+    isDemo: true,
+    title: 'Serene Heights Premium Girls Residency',
+    tagline: 'Safe, Homely & Hygienic Living with Curated Meals',
+    type: 'PG',
+    gender: 'Female Only',
+    location: 'North Campus, GTB Nagar, Delhi',
+    distance: '300m from Delhi University Metro',
+    baseRent: 13000,
+    deposit: 22000,
+    roomTypes: ['1-Seater', '2-Seater'],
+    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80',
+    trustScore: 97,
+    foodRating: 4.9,
+    ownerRating: 4.9,
+    depositReliability: 'Instant Settlement',
+    electricity: 'Sub-metered (₹9 / unit)',
+    amenities: ['24/7 Female Warden', 'Fingerprint Lock', 'RO Water', 'Study Desks', 'Nutritious Food'],
+    badge: 'Demo Listing',
+  },
+];
+
+export const TICKET_CATEGORIES = {
+  ELECTRICAL: 'ELECTRICAL',
+  PLUMBING: 'PLUMBING',
+  INTERNET: 'INTERNET',
+  CLEANING: 'CLEANING',
+  APPLIANCE: 'APPLIANCE',
+  FURNITURE: 'FURNITURE',
+  WATER: 'WATER',
+  SECURITY: 'SECURITY',
+  OTHER: 'OTHER',
+};
+
+export const TICKET_PRIORITIES = {
+  LOW: 'LOW',
+  MEDIUM: 'MEDIUM',
+  HIGH: 'HIGH',
+  URGENT: 'URGENT',
+};
+
+export const TICKET_STATUSES = {
+  OPEN: 'OPEN',
+  ACKNOWLEDGED: 'ACKNOWLEDGED',
+  IN_PROGRESS: 'IN_PROGRESS',
+  RESOLVED: 'RESOLVED',
+  CLOSED: 'CLOSED',
+  REOPENED: 'REOPENED',
+};
+
+export const SLA_CONFIG = {
+  LOW: {
+    responseHours: 48,
+    resolutionHours: 120,
+    label: 'Low Priority',
+    responseLabel: '48 Hours Response',
+    resolutionLabel: '5 Days Resolution',
+    badgeColor: 'blue',
+  },
+  MEDIUM: {
+    responseHours: 24,
+    resolutionHours: 72,
+    label: 'Medium Priority',
+    responseLabel: '24 Hours Response',
+    resolutionLabel: '3 Days Resolution',
+    badgeColor: 'indigo',
+  },
+  HIGH: {
+    responseHours: 8,
+    resolutionHours: 24,
+    label: 'High Priority',
+    responseLabel: '8 Hours Response',
+    resolutionLabel: '24 Hours Resolution',
+    badgeColor: 'amber',
+  },
+  URGENT: {
+    responseHours: 2,
+    resolutionHours: 8,
+    label: 'Urgent Priority',
+    responseLabel: '2 Hours Response',
+    resolutionLabel: '8 Hours Resolution',
+    badgeColor: 'rose',
+  },
+};
+

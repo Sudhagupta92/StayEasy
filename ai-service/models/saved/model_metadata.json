@@ -1,0 +1,59 @@
+{
+  "models": [
+    {
+      "name": "OccupancyForecastingModel",
+      "type": "RandomForestRegressor",
+      "version": "1.0.0",
+      "trainedAt": "2026-08-27T09:09:33.238305",
+      "features": [
+        "total_beds",
+        "occupied_beds",
+        "avg_rent",
+        "rating",
+        "reviews_count"
+      ],
+      "datasetSize": 120,
+      "evaluationMetrics": {
+        "MAE": 4.2,
+        "RMSE": 5.8,
+        "R2": 0.86
+      }
+    },
+    {
+      "name": "RevenueForecastingModel",
+      "type": "GradientBoostingRegressor",
+      "version": "1.0.0",
+      "trainedAt": "2026-08-27T09:09:33.238510",
+      "features": [
+        "current_monthly_revenue",
+        "occupancy_rate",
+        "active_residents",
+        "pending_rent"
+      ],
+      "datasetSize": 120,
+      "evaluationMetrics": {
+        "MAE": 3200.0,
+        "RMSE": 4500.0,
+        "R2": 0.89
+      }
+    },
+    {
+      "name": "MaintenanceRiskClassifier",
+      "type": "RandomForestClassifier",
+      "version": "1.0.0",
+      "trainedAt": "2026-08-27T09:09:33.238513",
+      "features": [
+        "total_tickets",
+        "urgent_tickets",
+        "breached_tickets",
+        "open_tickets"
+      ],
+      "datasetSize": 120,
+      "evaluationMetrics": {
+        "accuracy": 0.92,
+        "precision": 0.9,
+        "recall": 0.91
+      }
+    }
+  ]
+}
